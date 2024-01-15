@@ -1,0 +1,116 @@
+.app-konva{
+  display: flex;
+  background-color: rgba($color: #000000, $alpha: .8);
+}
+
+.konva{
+  &-wrap{
+    padding: 50px 50px 50px 0;
+    background-color: black;
+    max-height: calc(100vh - 100px);
+    overflow: hidden;
+    display: flex;
+  }
+
+  &-wrap-1{
+    background-color: #fff;
+    max-height: inherit;
+    margin-left: 50px;
+    position: relative;
+
+    canvas{
+      max-height: inherit
+    }
+
+    &.cursor-text{
+      cursor: url('../../../../assets/cur/letter_a.cur'), default;
+    }
+    
+    &.cursor-arrow{
+      cursor: url('../../../../assets/cur/arrow_up.cur'), default;
+    }
+  }
+
+  &-tool{
+    height: 100vh;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #fff;
+
+    &-wrap{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      img{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+
+      .icon-wrap{
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .active{
+        background-color: rgba($color: #fff, $alpha: 0.3);
+      }
+    }
+
+  }
+}
+
+.btn-konva-export{
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: grab;
+
+  span{
+    position: absolute;
+    background-color: gray;
+
+    &:first-of-type{
+      width: 25px;
+      height: 2px;
+      bottom: 27px;
+      left: 7%;
+    }
+
+    &:nth-of-type(2){
+      width: 25px;
+      height: 2px;
+
+      bottom: 27px;
+      right: 7%;
+    }
+
+    &:nth-of-type(3){
+      width: 15px;
+      height: 1px;
+      bottom: 17px;
+      left: 12%;
+    }
+
+    &:last-child{
+      width: 15px;
+      height: 1px;
+      bottom: 17px;
+      right: 12%;
+    }
+  }
+}

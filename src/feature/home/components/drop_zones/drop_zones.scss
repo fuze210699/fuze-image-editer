@@ -1,0 +1,18 @@
+.drop-zone{
+
+  &-wrap{
+    width: 100%;
+    min-height:500px;
+    border: 2px dashed #0047ab;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &-let-drop-image{
+    width: 15rem;
+    height: 15rem;
+  }
+}
