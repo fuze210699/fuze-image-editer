@@ -23,11 +23,11 @@
     }
 
     &.cursor-text{
-      cursor: url('../../../../assets/cur/letter_a.cur'), default;
+      cursor: url('../../assets/cur/letter_a.cur'), default;
     }
-    
+
     &.cursor-arrow{
-      cursor: url('../../../../assets/cur/arrow_up.cur'), default;
+      cursor: url('../../assets/cur/arrow_up.cur'), default;
     }
   }
 
@@ -38,12 +38,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #fff;
 
     &-wrap{
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 10px;
 
       img{
         width: 30px;

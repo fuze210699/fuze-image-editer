@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Dropzone from "react-dropzone";
-import "./drop_zones.scss";
-import { FilesImage } from "../../../../assets/images";
+import { FilesImage } from "../../assets/images";
 
 const DropZones = (props) => {
   const handleAcceptedFiles = (files) => {
