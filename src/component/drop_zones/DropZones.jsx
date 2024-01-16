@@ -14,7 +14,7 @@ const DropZones = (props) => {
           <section>
             <div className="drop-zone-wrap" {...getRootProps()}>
               <input {...getInputProps()} />
-              <img src={FilesImage} className="drop-zone-let-drop-image" />
+              <img src={FilesImage} className="drop-zone-let-drop-image" alt="files" />
               <p>Drop to attach files</p>
             </div>
           </section>
